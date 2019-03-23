@@ -1,0 +1,229 @@
+ .modal_wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  display: none
+}
+
+.modal_wrapper.shown {
+  display: block
+}
+
+.modal_close {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0px;
+  display: inline-block;
+  background-size: 1198px 948px;
+  background-image: url(/assets/images/landing@1x-f1bf3e440aef33cfd3382ac53eae4195afc401e9b4692d85d9afbc2e6a6b4f84.png);
+  width: 29px;
+  height: 29px;
+  background-position: -802px -174px;
+  position: absolute;
+  right: 0;
+  top: -40px
+}
+
+@media (min-device-pixel-ratio: 2),
+(-webkit-min-device-pixel-ratio: 2),
+(min--moz-device-pixel-ratio: 2),
+(min-resolution: 2dppx) {
+  .modal_close {
+    display: inline-block;
+    background-size: 1198px 948px;
+    background-image: url(/assets/images/landing@2x-33728eda77f112cbff6af9c89791be01e49984ff5314f3b795b0cb80831c6c9b.png)
+  }
+}
+
+.contact_popup {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  display: none;
+  position: absolute;
+  border: 1px solid #dce4e6;
+  background-color: #ffffff;
+  font-size: 14px;
+  width: 300px;
+  top: 55px;
+  right: 0
+}
+
+.contact_popup:after,
+.contact_popup:before {
+  bottom: 100%;
+  right: 20px;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute
+}
+
+.contact_popup:after {
+  border-color: transparent;
+  border-bottom-color: #ffffff;
+  border-width: 7px;
+  margin-left: -7px;
+  right: 21px
+}
+
+.contact_popup:before {
+  border-color: transparent;
+  border-bottom-color: #dce4e6;
+  border-width: 8px;
+  margin-left: -8px
+}
+
+.contact_popup_item {
+  line-height: initial;
+  border-bottom: 1px solid #dce4e6;
+  white-space: nowrap
+}
+
+.contact_popup_item:last-child {
+  border-bottom: none
+}
+
+.contact_popup_item_heading {
+  font-weight: 600;
+  line-height: 45px;
+  padding-left: 10px;
+  width: 75px;
+  display: inline-block
+}
+
+.contact_popup_item_content {
+  line-height: 45px;
+  padding-right: 10px
+}
+
+.landing_user_select_wrapper {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -325px;
+  width: 650px
+}
+
+.landing_user_select {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  width: 310px;
+  margin-right: 30px;
+  float: left;
+  background-color: #fbfbfb;
+  box-shadow: 0 15px 30px 0 rgba(41, 79, 133, 0.1)
+}
+
+.landing_user_select.last {
+  margin-right: 0
+}
+
+.landing_user_select_image {
+  margin-bottom: 15px;
+  width: 310px;
+  height: 215px;
+  background-size: 310px 215px
+}
+
+/* .landing_user_select_image.candidate {
+  background-image: url(/assets/images/user_select_candidate-087421d002b6c5d8da29204de07dee50d46ff6a2cd3f7a6af5778bac5dfb21b6.png)
+}
+
+.landing_user_select_image.company {
+  background-image: url(/assets/images/user_select_company-ff7bc50d3b296b05440253e0d9b3d0fddcab16cf417fb1798511570d92972123.png)
+} */
+
+.landing_user_select_text_wrapper {
+  padding: 0 20px 30px
+}
+
+.landing_user_select_label {
+  font-size: 14px;
+  color: rgba(75, 89, 102, 0.8);
+  display: block;
+  margin-bottom: 5px
+}
+
+.landing_user_select_title {
+  font-size: 22px;
+  line-height: 26px;
+  margin-bottom: 25px;
+  color: #4b5966
+}
+
+.landing_user_select_button {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color: #ffffff;
+  background: #33afec;
+  background: -moz-linear-gradient(left, #33afec 0%, #008fd5 51%, #33afec 100%);
+  background: -webkit-linear-gradient(left, #33afec 0%, #008fd5 51%, #33afec 100%);
+  background: linear-gradient(to right, #33afec 0%, #008fd5 51%, #33afec 100%);
+  background-size: 200% auto;
+  transition: background-position 0.2s;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  font-size: 14px;
+  line-height: 40px
+}
+
+.landing_user_select_button:hover {
+  background-position: right center
+}
+.modal_wrapper.shown {
+    display: block;
+}
+@media (max-width: 768px) {
+    .landing_user_select_wrapper {
+    position: fixed;
+    width: 310px;
+    margin-left: -155px;
+    top: 20px
+  }
+  .landing_user_select {
+    float: none;
+    margin: 0 0 20px
+  }
+  .landing_user_select_image {
+    display: none
+  }
+  .landing_user_select_image.candidate {
+    background-image: url(/assets/images/user_select_candidate_mobile-ba61d0a89a7a6d4cec87265b113360c5f3b17c39ce8568027306b5ea62a78231.png)
+  }
+  .landing_user_select_image.company {
+    background-image: url(/assets/images/user_select_company_mobile-14ac3b156cd63807eb2c49e4e2df9e33e829e8f535b0b138443561458a7b41c4.png)
+  }
+  .landing_user_select_text_wrapper {
+    padding: 20px 30px
+  }
+  .landing_user_mobile_close_wrapper {
+    margin-top: 30px;
+    text-align: center
+  }
+  .landing_user_mobile_close {
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: underline;
+    color: #ffffff
+  }
+  .landing_cookie_explanation {
+    width: 60% !important
+  }
+  .landing_cookie_close {
+    top: 10px !important
+  }
+  .landing_menu_element_ga {
+    display: none
+  }
+}
