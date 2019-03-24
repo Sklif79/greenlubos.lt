@@ -6536,3 +6536,28 @@ padding: 3px 6px;
         margin-bottom: 5px;
     }
 }
+
+.btn.aboutimg__modal {
+    font-weight: bold;
+    font-size: 14px;
+    background-color: transparent;
+    border: 1px solid #000;
+}
+
+.btn.aboutimg__modal:active, .btn.aboutimg__modal:focus {
+    outline: none;
+}
+
+.aboutimg__modal .fa-phone {
+    position: relative;
+    top: 1px;
+}
+
+.aboutimg__modal:active {
+    box-shadow: none;
+}
+
+.aboutimg__modal-wrap {
+    text-align: center;
+    margin-top: 30px;
+}
