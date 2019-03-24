@@ -733,7 +733,6 @@ li {
 .main-header .top_header {
     position: relative;
     font-size: 13px;
-    padding: 9px 0px 7px;
     background: #151515;
     color: #ffffff;
     z-index: 1;
@@ -766,8 +765,16 @@ li {
     color: #b9975b;
 }
 
+.top_infowrp {
+    padding: 9px 0 7px;
+}
+
 .top_infowrp.top-right {
     float: right;
+}
+
+.top_infowrp.top-left {
+    float: left;
 }
 
 .main-header .top_infoitem li {
@@ -5649,6 +5656,7 @@ li {
 
 .footer .social {
 	margin-top: 30px;
+    text-align: center;
 }
 
 .footer .social li {
@@ -6560,4 +6568,23 @@ padding: 3px 6px;
 .aboutimg__modal-wrap {
     text-align: center;
     margin-top: 30px;
+}
+
+.main-header .top_header .main-header__fb {
+    width: 25px;
+    height: 25px;
+    background: #b9975b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 100%;
+    box-shadow: 0 0 5px #151515;
+}
+
+.main-header .top_infoitem li .fa.fa-facebook {
+    padding-right: 0;
+    color: #fff;
 }
