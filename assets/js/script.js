@@ -760,9 +760,15 @@
   
   mainwindow.on('resize', function() {
 	  
-  });	  
-	  
-	  
-	  	
+  });
+
+  //move action before our works
+	mainwindow.on('load resize', function () {
+  	if (mainwindow.width() < 768) {
+  	  $('.service-style4').after($('.js_move-mobile'));
+	} else {
+  	  $('.testm-section-4').after($('.js_move-mobile'));
+	}
+  });
 
 })(window.jQuery);
