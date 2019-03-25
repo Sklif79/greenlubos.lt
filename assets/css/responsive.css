@@ -592,7 +592,15 @@
     }
 	.homecontact-3 #contact-form {
 		right: 30px;
-	}	
+	}
+
+    .top_socialinfo {
+        display: flex;
+    }
+
+    .top_socialinfo li:first-child {
+        margin-right: auto;
+    }
 }
 
 @media only screen and (max-width: 380px) {}
