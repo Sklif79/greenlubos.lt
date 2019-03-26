@@ -6584,6 +6584,10 @@ padding: 3px 6px;
     box-shadow: 0 0 5px #151515;
 }
 
+.main-header .top_header .main-header__fb.header-fb_mobile {
+    display: none;
+}
+
 .main-header .top_infoitem li .fa.fa-facebook {
     padding-right: 0;
     color: #fff;

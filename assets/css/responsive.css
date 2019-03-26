@@ -205,6 +205,19 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .main-header .top_header .main-header__fb.header-fb_desktop {
+        display: none;
+    }
+
+    .main-header .top_header .main-header__fb.header-fb_mobile {
+        display: flex;
+    }
+
+    .main-header .top_socialinfo li:last-of-type {
+        margin-left: 2px;
+        margin-top: 1px;
+    }
+
     .fixed-navbar .sticky-navbar {
        /*  display: none; */
     }
