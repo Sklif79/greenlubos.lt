@@ -1419,6 +1419,17 @@ li {
     margin-right: 10px;
     transition: all .5s ease;
 }
+@media screen and (min-width: 768px) {
+    .forcefullwidth_wrapper_tp_banner .tpr-btn {
+        font-size: 24px !important;
+        padding: 14px 32px!important;;
+    }
+}
+
+.forcefullwidth_wrapper_tp_banner .tpr-btn .fa-phone {
+    position: relative;
+    top: 2px;
+}
 
 .tpr-btn:hover {
     background: #151515;

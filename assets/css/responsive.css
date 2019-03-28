@@ -205,6 +205,10 @@
 }
 
 @media only screen and (max-width: 767px) {
+    .main-header .top_infoitem li:last-of-type {
+        display: none;
+    }
+
     .main-header .top_header .main-header__fb.header-fb_desktop {
         display: none;
     }
@@ -616,4 +620,8 @@
     }
 }
 
-@media only screen and (max-width: 380px) {}
+@media only screen and (max-width: 380px) {
+    .main-header .top_infoitem li a {
+        font-size: 11px;
+    }
+}
